@@ -1,0 +1,101 @@
+
+/* Body y contenedor */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Header como grid: logo | título */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto 20px;
+}
+
+.logo {
+  justify-self: start;
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  justify-self: center;
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Tabla y caption */
+.table-wrapper {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+}
+
+caption.clock {
+  caption-side: top;
+  text-align: center;
+  font-size: 8em;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+th, td {
+  padding: 16px 12px;
+  border: 1px solid #1976d2;
+  text-align: center;
+}
+
+thead th {
+  background-color: #1976d2;
+  color: white;
+  font-size: 1.05em;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9fbfd;
+}
+
+/* Estados */
+.estado {
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.en-turno { background-color: #c8e6c9; color: #256029; }
+.fuera-turno { background-color: #ffcdd2; color: #b71c1c; }
+.por-entrar { background-color: #fff9c4; color: #f57f17; }
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .logo { justify-self: center; }
+  th, td { padding: 12px 8px; font-size: 0.9em; }
+  caption.clock { font-size: 1.5em; }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turnos del Personal</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Logo de la Empresa" class="logo"/>
+    <h1>📋 Turnos del Personal</h1>
+    <div id="clock" class="clock"></div>
+  </header>
+
+  <div class="table-wrapper">
+    <table id="turnos">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Puesto</th>
+          <th>Teléfono</th>
+          <th>Horario</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-turnos">
+        <!-- JS inyecta filas aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
