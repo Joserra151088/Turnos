@@ -7,7 +7,6 @@ const empleados = [
   { nombre: "Liza Michelle Magdaleno Fourlong",    puesto: "Médico", telefono: "5580093861", inicio: "09:00", fin: "18:00" },
   { nombre: "Sergio Peña Sánchez",    puesto: "Médico", telefono: "5580093861", inicio: "18:00", fin: "06:00" },
   { nombre: "Fernando José Pico Querales",    puesto: "Médico", telefono: "5543461450", inicio: "09:00", fin: "18:00" },
-  { nombre: "Mariangel Ortiz Madrid",    puesto: "Nutriologa", telefono: "5579185825", inicio: "15:00", fin: "19:00" },
   { nombre: "Brenda Liliana Hernández Aguirre",    puesto: "Médico", telefono: "5530717483", inicio: "09:00", fin: "18:00" },
   { nombre: "Alejandra Noguez García",    puesto: "Médico", telefono: "5543481064", inicio: "09:00", fin: "18:00" },
   { nombre: "Atenas Olimpia Arroyo Fernández",    puesto: "Cordinador de la Atención", telefono: "5512371205", inicio: "09:00", fin: "18:00" },
